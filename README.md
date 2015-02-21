@@ -1,2 +1,2 @@
 # latest
-SDDAte is a simple library for handling dates in C++
+SDDate is a simple library for handling dates in C++
