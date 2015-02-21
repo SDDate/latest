@@ -11,7 +11,7 @@
 #include <sstream>
 #include <stdlib.h>
 #include <cstring>
-namespace cs3505
+namespace SDDate
 {
 
   /*

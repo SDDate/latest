@@ -11,3 +11,22 @@ h1
 .u{
 	 text-decoration: underline;
 }
+
+.b{
+	font-weight: bold;
+}
+
+table
+{
+	border: 1px solid;
+	
+}
+
+td {
+	border: 1px solid;
+}
+
+th
+{
+	border:1px solid;
+}

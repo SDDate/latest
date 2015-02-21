@@ -3,7 +3,7 @@
 
 #include<string>
 
-namespace cs3505
+namespace SDDate
 {
 
   class date

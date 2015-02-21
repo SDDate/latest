@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="SDDate.css">
+    <title> Create Date Objects </title>
+  </head>
+  <body>
+  	<h3> 
+	Creating Date Objects </h3>
+
+  Date objects can be created via three constructors: Default, Copy, and String.
+  Use namespace SDDate for convenience. Dates are in the Gregorian calendar system, and so will validly represent dates after 1752. Date objects account for leap years and can tell you the day of the week for any date. Date objects can be incremented and decremented to go back or forward in time while remaining in valid format. See the index page for a full reference.
+ 
+ 	<p>
+  	<span class="b"> Default Constructor </span>
+    The default constructor returns a Date object with a date of January 1, 1970. Takes no parameters. 
+    <p>
+      date* HeapDate = new date(); <br>  date  Stackdate = date();
+    </p>
+  	</p>
+
+  	<p>
+  	
+  	<span class="b"> Copy Constructor </span>
+    The copy constructor performs a member-wise copy of another date object. Pass in an existing date object.
+
+    <p>
+    date current = date(); <br>
+    date copied = date(current); <br>
+    date* copied = new date(current);
+  </p>
+  </p>
+  <p>
+  	<span class="b"> String Constructor </span>
+    The string constructor creates a date object based on a mm/dd/yyyy input string. Pass in a std::string. For now, it is possible to create an invalid date e.g. June 31st or February 29th on a non-leap year via this constructor. A fix for this is in the works. If you're not sure if a date is valid, create a date before it that you know is valid and use the date::increment until it is reached or skipped. 
+    <p>
+    date example = date("01/28/1984"); <br>
+    date* example = date("09/13/2084");
+  </p>
+
+</p>
+  	<h4> <a href="SDDateReference.html"> index </a> </h4>
+
+  </body>
+
+  </html>
